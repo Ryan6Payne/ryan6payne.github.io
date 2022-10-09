@@ -1,29 +1,61 @@
-import { shuffle } from "lodash";
-import { useEffect, useState } from "react";
-
-const colours = [
-    "from-indigo-500",
-    "from-blue-500",
-    "from-green-500",
-    "from-red-500",
-    "from-yellow-500",
-    "from-pink-500",
-    "from-purple-500"
-]
+import Jeremy from "./Jeremy";
+import Scott from "./Scott";
+import Ryan from "./Ryan";
+import Adrian from "./Adrian";
+import Andy from "./Andy";
+import Mike from "./Mike";
+import Nick from "./Nick";
+import Craig from "./Craig";
 
 function Center(){
-    const [colour, setColour] = useState(null);
-
-    useEffect(() =>{
-        setColour(shuffle(colours).pop());
-    }, []) 
-
     return(
-        <div className="flex-grow">
-            <section className={`flex items-end space-x-7 bg-gradient-to-b to-slate-400 ${colour} h-60 text-white padding-8`}>
-                <h1>hello</h1>
-            </section>
-        </div>
+            <div>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-sm">
+                            <Scott/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-sm">
+                            <Ryan/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-sm">
+                            <Craig/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-sm">
+                            <Mike/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-sm">
+                            <Andy/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-sm">
+                            <Jeremy/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-sm">
+                            <Adrian/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-sm">
+                            <Nick/>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
     )
 }
 
