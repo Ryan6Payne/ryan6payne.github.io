@@ -14,7 +14,7 @@ function Jeremy(props){
                     <th>Date</th>
                 </tr>
                 <tr>
-                    <td>33</td>
+                    <td>34</td>
                     <td>09/10/2022</td>
                 </tr>
             </table>
