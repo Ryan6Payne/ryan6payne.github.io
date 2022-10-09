@@ -2,6 +2,8 @@
   "homepage":"https://ryan6payne.github.io/winter-league",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
